@@ -36,19 +36,17 @@
     nav a:hover{background:var(--pink);transform:translateY(-3px);box-shadow:var(--shadow)}
 
     /* Video section */
-    .intro-video{
-      width:100%;
-      max-height:500px;
-      overflow:hidden;
-      position:relative;
-      border-bottom:4px solid var(--pink);
-    }
-    .intro-video video{
-      width:100%;
-      height:auto;
-      display:block;
-      object-fit:cover;
-    }
+    .intro-video {
+  width: 100%;
+  max-width: 400px; /* حجم الفيديو المناسب لهاتف، يمكن تغييره مثلاً إلى 500px */
+  aspect-ratio: 9 / 16; /* يجعل الفيديو مثل الريلز */
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 8px 25px rgba(255,102,178,0.25);
+  object-fit: cover; /* يمنع تمدد الصورة ويملأ الإطار بشكل جميل */
+}
+
 
     /* فراشات */
     .butterfly{
@@ -233,3 +231,4 @@
   </script>
 </body>
 </html>
+
