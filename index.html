@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>عيادة د. آيات محمود</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink-light:#ffe6f0;
+      --pink:#ff99cc;
+      --pink-dark:#ff66b2;
+      --white:#fff;
+      --gray:#777;
+      --shadow:0 8px 25px rgba(255,102,178,0.15);
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth;}
+    body{
+      margin:0;
+      font-family:'Cairo',sans-serif;
+      background:linear-gradient(180deg,var(--pink-light),#fff);
+      color:#333;
+      overflow-x:hidden;
+    }
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px;max-width:1100px;margin:auto;
+    }
+    .logo{display:flex;align-items:center;gap:12px;}
+    .logo img{width:70px;height:70px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow);}
+    h1{margin:0;font-size:22px;color:var(--pink-dark)}
+    nav a{
+      margin-left:10px;text-decoration:none;color:white;background:var(--pink-dark);
+      padding:10px 14px;border-radius:12px;transition:all .3s;display:inline-flex;align-items:center;gap:6px;
+    }
+    nav a:hover{background:var(--pink);transform:translateY(-3px);box-shadow:var(--shadow)}
+
+    /* Video section */
+    .intro-video{
+      width:100%;
+      max-height:500px;
+      overflow:hidden;
+      position:relative;
+      border-bottom:4px solid var(--pink);
+    }
+    .intro-video video{
+      width:100%;
+      height:auto;
+      display:block;
+      object-fit:cover;
+    }
+
+    /* فراشات */
+    .butterfly{
+      position:absolute;
+      width:40px;
+      height:40px;
+      background:url('https://cdn-icons-png.flaticon.com/512/616/616490.png') no-repeat center/contain;
+      animation:fly 12s linear infinite;
+      opacity:0.8;
+      pointer-events:none;
+    }
+    @keyframes fly{
+      0%{transform:translateY(0) translateX(0) rotate(0deg);}
+      50%{transform:translateY(-200px) translateX(100px) rotate(180deg);}
+      100%{transform:translateY(0) translateX(200px) rotate(360deg);}
+    }
+
+    .hero{
+      max-width:1100px;
+      margin:30px auto;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+    .hero img{
+      width:100%;
+      max-width:350px;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      transition:transform .3s;
+    }
+    .hero img:hover{transform:scale(1.03);}
+    .hero h2{color:var(--pink-dark);font-size:26px;margin-bottom:8px;}
+    .hero p{color:var(--gray);margin:0 0 20px;}
+
+    .afterwork{
+      text-align:center;
+      margin:20px auto;
+      max-width:700px;
+    }
+    .afterwork h3{
+      color:var(--pink-dark);
+      margin-bottom:10px;
+    }
+    .afterwork img{
+      width:100%;
+      max-width:400px;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+    }
+
+    .tips{
+      max-width:900px;
+      margin:30px auto;
+      padding:20px;
+      background:white;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+    }
+    .tips h3{text-align:center;color:var(--pink-dark);}
+    .tip-box{
+      background:var(--pink-light);
+      margin:10px;
+      padding:15px;
+      border-radius:15px;
+      box-shadow:var(--shadow);
+      transition:transform .3s;
+    }
+    .tip-box:hover{transform:translateY(-5px);}
+    
+    .booking{
+      max-width:900px;
+      margin:30px auto;
+      padding:20px;
+      background:white;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+    .booking h3{color:var(--pink-dark);}
+    form{display:flex;flex-direction:column;align-items:center;gap:10px;}
+    input,select,textarea{
+      width:100%;
+      max-width:400px;
+      padding:10px;
+      border:1px solid #ddd;
+      border-radius:10px;
+      font-family:'Cairo',sans-serif;
+    }
+    button{
+      background:var(--pink-dark);
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:12px;
+      cursor:pointer;
+      transition:all .3s;
+    }
+    button:hover{background:var(--pink);transform:translateY(-3px);box-shadow:var(--shadow)}
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:var(--pink-light);
+      color:var(--pink-dark);
+      font-weight:600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/b.jpg" alt="شعار العيادة">
+      <h1>عيادة د. آيات محمود</h1>
+    </div>
+    <nav>
+      <a href="https://www.instagram.com/ayot.99_mh?igsh=MXNlZGE1bGIxZDhuMA==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="انستغرام" width="18"> انستغرام
+      </a>
+    </nav>
+  </header>
+
+  <div class="intro-video">
+    <video autoplay muted loop playsinline>
+      <source src="video/w.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero">
+    <h2>ابتسامتك أجمل معنا 💖</h2>
+    <img src="images/a.jpg" alt="صورة قبل وبعد">
+    <p>نقدم خدمات تجميل الأسنان، الحشوات، وتبييض الأسنان بأحدث التقنيات.</p>
+  </div>
+
+  <div class="afterwork">
+    <h3>عمل حشوة تجميلية ناجح</h3>
+    <img src="iimages/d.jpg" alt="صورة منجزة">
+  </div>
+
+  <div class="booking">
+    <h3>احجزي موعدك الآن 💅</h3>
+    <form>
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="tel" placeholder="رقم الهاتف" required>
+      <select required>
+        <option>اختاري الخدمة</option>
+        <option>تنظيف الأسنان</option>
+        <option>تبييض الأسنان</option>
+        <option>حشوات تجميلية</option>
+        <option>ابتسامة هوليوود</option>
+        <option>علاج اللثة</option>
+      </select>
+      <textarea rows="3" placeholder="ملاحظات إضافية"></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+  <div class="tips">
+    <h3>نصائح لصحة أسنانك 🦷</h3>
+    <div class="tip-box">اغسلي أسنانك مرتين يوميًا بمعجون يحتوي على الفلورايد.</div>
+    <div class="tip-box">استخدمي الخيط الطبي لتنظيف ما بين الأسنان يوميًا.</div>
+    <div class="tip-box">قللي من تناول السكريات والمشروبات الغازية.</div>
+    <div class="tip-box">راجعي طبيب الأسنان كل ستة أشهر للفحص والتنظيف.</div>
+  </div>
+
+  <footer>
+    جميع الحقوق محفوظة © د. آيات محمود 2025
+  </footer>
+
+  <script>
+    // إنشاء الفراشات
+    for(let i=0;i<10;i++){
+      const b=document.createElement('div');
+      b.className='butterfly';
+      b.style.left=Math.random()*100+'%';
+      b.style.top=Math.random()*100+'%';
+      b.style.animationDelay=(Math.random()*5)+'s';
+      document.body.appendChild(b);
+    }
+  </script>
+</body>
+</html>
