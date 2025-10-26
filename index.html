@@ -36,21 +36,21 @@
     nav a:hover{background:var(--pink);transform:translateY(-3px);box-shadow:var(--shadow)}
 
     /* Video section */
-   .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
 
-.intro-video {
-  width: 300px;
-  height: 530px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 8px 25px rgba(255,102,178,0.25);
-}
-
+    .video-container video {
+      width: 280px;
+      height: 500px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 8px 25px rgba(255,102,178,0.25);
+      display: block;
+    }
 
     /* فراشات */
     .butterfly{
@@ -175,7 +175,7 @@
     </nav>
   </header>
 
-  <div class="intro-video">
+  <div class="video-container">
     <video autoplay muted loop playsinline>
       <source src="video/w.mp4" type="video/mp4">
     </video>
@@ -235,5 +235,3 @@
   </script>
 </body>
 </html>
-
-
