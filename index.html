@@ -36,15 +36,19 @@
     nav a:hover{background:var(--pink);transform:translateY(-3px);box-shadow:var(--shadow)}
 
     /* Video section */
-    .intro-video {
-  width: 100%;
-  max-width: 400px; /* حجم الفيديو المناسب لهاتف، يمكن تغييره مثلاً إلى 500px */
-  aspect-ratio: 9 / 16; /* يجعل الفيديو مثل الريلز */
+   .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.intro-video {
+  width: 300px;
+  height: 530px;
   border-radius: 20px;
-  display: block;
-  margin: 20px auto;
+  object-fit: cover;
   box-shadow: 0 8px 25px rgba(255,102,178,0.25);
-  object-fit: cover; /* يمنع تمدد الصورة ويملأ الإطار بشكل جميل */
 }
 
 
@@ -185,7 +189,7 @@
 
   <div class="afterwork">
     <h3>عمل حشوة تجميلية ناجح</h3>
-    <img src="iimages/d.jpg" alt="صورة منجزة">
+    <img src="images/d.jpg" alt="صورة منجزة">
   </div>
 
   <div class="booking">
@@ -231,4 +235,5 @@
   </script>
 </body>
 </html>
+
 
